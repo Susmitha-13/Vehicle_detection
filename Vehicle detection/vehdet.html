@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Detection</title>
+    <link rel="stylesheet" href="veh.css"> <!-- Link to CSS file -->
+    <script async src="https://docs.opencv.org/4.x/opencv.js" onload="onOpenCvReady();"></script> <!-- Include OpenCV.js -->
+</head>
+<body>
+
+<div class="nav">
+    <div class="logo">
+        <h1>Vehicle<span style="color: #25b1cc;">Detection</span></h1>
+    </div>
+    <div class="fns">
+        <a href="home.html">Home</a>
+        <a href="camsetup.html">Camera Setup</a>
+        <a href="camsettings.html">Camera Settings</a>
+        <a href="vehdet.html">Vehicle Detection</a>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="Search">
+        <img src="search.png" id="srh">
+    </div>
+    <a href="profile.html">
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+        </div>
+    </a>
+</div>
+
+<div class="container">
+    <h1>Vehicle Detection</h1>
+    <button id="startButton">Start Vehicle Detection</button>
+    <div class="video-container">
+        <video id="video" width="640" height="480" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <p id="vehicleCounter">Vehicle Count: 0</p>
+</div>
+
+<script src="veh.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

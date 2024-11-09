@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Setup</title>
+    <link rel="stylesheet" href="camset.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav">
+    <div class="logo">
+        <h1>Vehicle<span style="color: #25b1cc;">Detection</span> </h1>
+    </div>
+    <div class="fns">
+        <a href="home.html">Home</a>
+        <a href="camsetup.html">Camera Setup</a>
+        <a href="camsettings.html">Camera Settings</a>
+        <a href="vehdet.html">Vehicle Detection</a>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="Search">
+        <img src="search.png" id="srh" alt="Search Icon">
+    </div>
+    <a href="profile.html">
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile">
+        </div>
+    </a>
+</div>
+
+<!-- Camera Setup Content -->
+<div class="container">
+    <h2>Camera Setup</h2>
+    
+    <!-- Search Box -->
+    <div class="search-box">
+        <label for="camera-search">Search Camera Sources:</label>
+        <input type="text" id="camera-search" placeholder="Search...">
+    </div>
+    
+    <!-- Camera Selection Dropdown -->
+    <div class="dropdown">
+        <label for="camera-select">Select Camera Source:</label>
+        <select id="camera-select" onchange="navigateToCameraAdjustment()">
+            <option value="default">Select a camera</option>
+            <option value="camera1">Camera 1</option>
+            <option value="camera2">Camera 2</option>
+        </select>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-group">
+        <button onclick="goHome()">Home</button>
+        <button onclick="goToSettings()">Settings</button>
+    </div>
+</div>
+
+<script>
+    function goHome() {
+        window.location.href = "home.html";
+    }
+    
+    function goToSettings() {
+        window.location.href = "camsettings.html";
+    }
+
+    function navigateToCameraAdjustment() {
+        const selectedCamera = document.getElementById("camera-select").value;
+        if (selectedCamera === "camera1" || selectedCamera === "camera2") {
+            window.location.href = "camsettings.html"; // Replace with actual camera adjustment page
+        }
+    }
+</script>
+
+</body>
+</html>

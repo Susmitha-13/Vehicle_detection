@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
+    <title>Document</title>
+    <link rel="shortcut icon" href="h1.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <div class="logo">
+                <h1>Vehicle<span style="color: #25b1cc;">Detection</span> </h1>
+            </div>
+            <div class="fns">
+                <a href="home.html">Home</a>
+                <a href="camsetup.html">Camera Setup</a>
+                <a href="camsettings.html">Camera settings</a>
+                <a href="vehdet.html">Vehicle Detection</a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Search">
+                <img src="search.png" id="srh">
+            </div>
+            <a href="profile.html">
+                <div class="profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                </div>
+            </a>
+        </div>
+
+        <div class="details">
+            <div class="image">
+                <img src="procar.jpg"  alt="">
+            </div>
+            <div class="info">
+                <div class="line">
+                
+                </div>
+                <div class="text">
+                    <h2>
+                        Niklaus Mikaelson
+                    </h2>
+                    <br>
+                    <div class="phn">
+                        <img src="phn.png" alt="">
+                        <p>
+                            1234567890
+                        </p>
+                    </div>
+                    <br>
+                    <div class="mail">
+                        <img src="mail.png"  alt="">
+                        <p>
+                            user.name@gmail.com
+                        </p>
+                    </div>
+                    <br>
+                    <p>
+                        Drum Island
+                    </p>
+                </div>
+            </div>
+            <div class="btns">
+                
+                <a href="login.html">
+                    <button>Sign Out</button>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <!-- <form name="for" action="profile.html" method="get"> -->
+        <div class="history">
+            <h2>Payment History</h2>
+            <br>
+            <table id="tab">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Car ID</th>
+                    <th>Mode</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>9011</td>
+                    <td>Card</td>
+                    <td>12-12-12</td>
+                    <td>17200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2003</td>
+                    <td>Card</td>
+                    <td>12-1-13</td>
+                    <td>17200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1596</td>
+                    <td>Card</td>
+                    <td>24-3-15</td>
+                    <td>1000</td>
+                </tr>
+            </table>
+        <!-- </form> -->
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+    <script>
+        <!-- function getParams(){
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                for (var i=0; i<pairs.length; i++){
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+          }
+          params = getParams();
+          name = unescape(params["purpose"])
+          amt = unescape(params["amount"])
+          var table = document.getElementById("tab");
+          var row = table.insertRow();
+          var cell1=row.insertCell(0);
+          var cell2=row.insertCell(1);
+          var cell3=row.insertCell(2);
+          var cell4=row.insertCell(3);
+          var cell5=row.insertCell(4);
+          cell1.innerHTML="4";
+          cell2.innerHTML=name;      
+          cell3.innerHTML="Card";
+          const dt = new Date();
+          let day = dt.getDate();
+          let month = dt.getMonth()+1;
+          let year = dt.getFullYear();
+          let cur_dt = day+"-"+month+"-"+year;
+          cell4.innerHTML= cur_dt;
+          cell5.innerHTML=amt;
+
+          if (sessionStorage.getItem('reloaded') != null) {
+            console.log('page was reloaded');
+            console.log(sessionStorage.getItem('reloaded'));
+            document.getElementById("tab").deleteRow(4);
+          } else {
+            console.log('page was not reloaded');
+          }
+          
+          sessionStorage.setItem('reloaded', 'yes'); -->
+    </script> 
+</body>
+</html>

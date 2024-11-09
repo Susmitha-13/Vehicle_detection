@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn"><a href="Home.html">Login</a></button> 
+      <div class="register-link">
+        <p>Dont have an account? <a href="Register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript for input-box class
+      const usernameInput = document.querySelector('.input-box input[type="text"]');
+      const passwordInput = document.querySelector('.input-box input[type="password"]');
+      const loginButton = document.querySelector('.btn');
+
+      loginButton.addEventListener('click', validateAndRedirect);
+
+      function validateAndRedirect(event) {
+        event.preventDefault();
+
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        const isUsernameValid = validateUsername(username);
+        const isPasswordValid = validatePassword(password);
+
+        // Update UI based on input validity
+        if (isUsernameValid || isPasswordValid) {
+          usernameInput.classList.remove('invalid');
+          passwordInput.classList.remove('invalid');
+          window.location.href = 'home.html'; // Redirect to home.html
+        } else {
+          usernameInput.classList.toggle('invalid', !isUsernameValid);
+          passwordInput.classList.toggle('invalid', !isPasswordValid);
+
+          if (!isUsernameValid) {
+            <!-- alert('Please enter a valid username.'); -->
+          }
+
+          if (!isPasswordValid) {
+            alert('Please enter a valid password. Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.');
+          }
+        }
+      }
+
+      function validateUsername(username) {
+        // Regular expression to allow all combinations of characters
+        const usernameRegex = /^[^\s]+ ^[^\s]{6,}$/; // Allows any non-whitespace characters
+        return usernameRegex.test(username);
+      }
+
+      function validatePassword(password) {
+        // Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        return passwordRegex.test(password);
+      }
+
+      // JavaScript for other classes remain unchanged
+      const rememberCheckbox = document.querySelector('.remember-forgot input[type="checkbox"]');
+      const forgotLink = document.querySelector('.remember-forgot a');
+
+      rememberCheckbox.addEventListener('change', () => {
+        // code for checkbox event listener
+      });
+
+      forgotLink.addEventListener('click', (event) => {
+        // code for forgot password link event listener
+      });
+
+      const registerLink = document.querySelector('.register-link a');
+      registerLink.addEventListener('click', (event) => {
+        // code for register link event listener
+      });
+
+  </script>
+
+</body>
+
+</html>

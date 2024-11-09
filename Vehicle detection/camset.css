@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: rgb(15, 14, 14);
+    width: 100vw;
+    height: 10vh;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 30px;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.fns {
+    margin-left: 270px;
+    display: flex;
+    align-items: center;
+}
+
+.fns a {
+    text-decoration: none;
+    margin: 0 7px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 10px 20px;
+    margin-left: 80px;
+    width: 200px;
+    border: 1px solid #7b7b7b;
+    box-shadow: 1px 1px 3px #7b7b7b;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.search img {
+    width: 25px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.fns a:hover {
+    text-decoration: underline;
+    color: #25b1cc;
+    font-size: larger;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
+/* Camera Setup Content */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 12vh auto 0; /* Offset for fixed nav bar */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-box, .dropdown, .button-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus, input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+}

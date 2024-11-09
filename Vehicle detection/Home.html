@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="h1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="hstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <h1>Vehicle<span style="color: #25b1cc;">Detection</span> </h1>
+            </div>
+            <div class="fns">
+                <a href="home.html">Home</a>
+                <a href="camsetup.html">Camera setup</a>
+                <a href="camsettings.html">Camera settings</a>
+                <a href="vehdet.html">Vehicle Detection</a>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Search">
+                <img src="search.png" id="srh">
+            </div>
+            <a href="profile.html">
+                <div class="profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                </div>
+            </a>
+        </div>
+
+        <!--  Home   -->
+        <section class="home container" id="home">
+            <div class="home-text">
+                <!-- <h1>Find Your Next <br> <br>Perfect Place To <br> <br>Live</h1>
+                <br> <br> <br> -->
+                <h1>Vehicle Detection <br> <br> & Counters to Prevent <br> <br>Accidents</h1><br><br><br>
+                <a href="login.html" class="btn">Sign Up</a>&nbsp;&nbsp; 
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="about">
+            <h1>❉ About us</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sit laborum voluptas tenetur corporis
+                repudiandae vero, illum architecto unde enim reiciendis ipsa, quia a voluptate impedit nemo ullam
+                temporibus animi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nostrum possimus nihil fugiat inventore
+                ullam, expedita illo modi pariatur, fugit dolorum. Adipisci facere vel necessitatibus non illo quidem
+                eaque quam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt voluptate beatae adipisci ab
+                perspiciatis enim explicabo, repudiandae, ut tempora magnam modi earum. Expedita ducimus exercitationem
+                quos, nisi nulla id!
+            </p>
+        </div>
+        <br><br>
+        <div class="about">
+            <h1>❉ Our Projects</h1><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor itaque, quasi quidem deserunt
+                architecto fuga nemo corrupti, non ut laborum? Architecto in officiis ipsam, ab nesciunt magni
+                accusantium nostrum.
+                Quasi unde dolorum vitae expedita, iure ex tempora commodi mollitia aliquid voluptatum, adipisci
+                reprehenderit soluta non dolores fuga maiores aspernatur veniam natus libero consequuntur accusamus.
+                Aperiam officiis ab commodi rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+                minus, voluptatem rerum in sit asperiores iure quis officiis deserunt quo dicta sunt laudantium dolorem
+                repellat! Aut repellat expedita sunt et.
+            </p>
+        </div>
+        <br><br>
+   
+        <br>
+        <a href="#" class="top">Back to top ⬆️</a>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                    // Smooth scrolling for back to top link
+                    const backToTopLink = document.querySelector('.top');
+                    backToTopLink.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        document.querySelector('html').scrollIntoView({ behavior: 'smooth' });
+                    });
+
+                    // Confirmation message for Sign Up button
+                    const signUpButton = document.querySelector('.home .btn');
+                    signUpButton.addEventListener('click', function (event) {
+                        const confirmed = confirm('Are you sure you want to sign up?');
+                        if (!confirmed) {
+                            event.preventDefault();
+                        }
+                    });
+                });
+
+
+
+                document.getElementById("srh").addEventListener("click", function(){
+                    let inp = document.getElementById("search").value.toLowerCase();
+                    if(inp == "family"){
+                        window.location.href="family.html"
+                    }
+                    else if(inp == "bachelor"){
+                        window.location.href="bachelor.html"
+                    }
+                    else if(inp == "vihanga"){
+                        window.location.href="description.html";
+                    }
+                    else if(inp == "swiss bel"){
+                        window.location.href="description2.html";
+                    }
+                    else if(inp == "sun ridge"){
+                        window.location.href="description3.html";
+                    }
+                    else if(inp == "sayuk"){
+                        window.location.href="description4.html";
+                    }
+                    else if(inp == "krishe"){
+                        window.location.href="description5.html";
+                    }
+                    else if(inp == "westinn"){
+                        window.location.href="description6.html";
+                    }
+                    else if(inp == "radient retreat"){
+                        window.location.href="description7.html";
+                    }
+                    else if(inp == "vihar"){
+                        window.location.href="desbache.html";
+                    }
+                    else if(inp == "shivalik"){
+                        window.location.href="desbache2.html";
+                    }
+                    else if(inp == "pencil towers"){
+                        window.location.href="desbache3.html";
+                    }
+                    else if(inp == "gulmohar"){
+                        window.location.href="desbache4.html";
+                    }
+                    else if(inp == "provident housing"){
+                        window.location.href="desbache5.html";
+                    }
+                    else if(inp == "star view"){
+                        window.location.href="desbache6.html";
+                    }
+                    else if(inp == "rounak"){
+                        window.location.href="desbache7.html";
+                    }
+                    else if(inp == ""){
+                        alert("Field is empty");
+                    }
+                    else{
+                       alert("House not found... Try searching family or bachelor");
+                    }
+                })
+
+        </script>
+
+</body>
+
+</html>

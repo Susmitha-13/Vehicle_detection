@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0px;
+    padding: 17px 0px 0px 0px;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.nav{
+    background-color: rgb(15,15,15);
+    width: 100vw;
+    height: 10vh;
+    padding: 5px 0px;
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    color: white;
+  }
+/* 
+ */
+ .logo{
+  margin: 1px 0px 0px 30px;
+  font-family: 'Satisfy', cursive;
+  text-decoration: underline;
+  font-size: 20px;
+}
+  
+  .fns{
+    margin: 0px 0px 0px 270px;
+    align-items: center;
+  }
+  
+  .fns a{
+    text-decoration: none;
+    margin: 0px 7px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .search{
+    display: flex;
+  }
+  
+  .search input{
+    padding: 10px 10px 10px 20px;
+    margin: 0px 0px 0px 80px;
+    width: 200px;
+    border: 1px solid #7b7b7b;
+    box-shadow: 1px 1px 3px #7b7b7b;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  
+  .search img{
+    width: 25px;
+    height: 20px;
+    margin: 9px 0px 0px 8px;
+    align-items: center;
+  }
+  
+  .fns a:hover{
+    text-decoration: underline;
+    color: #25b1cc;
+    font-size: x-large;
+  }
+  
+  .profile{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .profile img{
+    width: 50px;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .profile:hover{
+    cursor: pointer;
+  }
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#vehicleCounter {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #25b1cc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #25b1cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1e94a3;
+}

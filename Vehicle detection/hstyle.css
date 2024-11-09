@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0px;
+    padding: 17px 0px 0px 0px;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.nav{
+    background-color: rgb(15, 14, 14);
+    width: 100vw;
+    height: 10vh;
+    padding: 5px 0px;
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    color: white;
+  }
+  
+  .logo{
+    margin: 1px 0px 0px 30px;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  
+  .fns{
+    margin: 0px 0px 0px 270px;
+    align-items: center;
+  }
+  
+  .fns a{
+    text-decoration: none;
+    margin: 0px 7px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .search{
+    display: flex;
+  }
+  
+  .search input{
+    padding: 10px 10px 10px 20px;
+    margin: 0px 0px 0px 80px;
+    width: 200px;
+    border: 1px solid #7b7b7b;
+    box-shadow: 1px 1px 3px #7b7b7b;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  
+  .search img{
+    width: 25px;
+    height: 20px;
+    margin: 9px 0px 0px 8px;
+    align-items: center;
+  }
+  
+  .fns a:hover{
+    text-decoration: underline;
+    color: #25b1cc;
+    font-size: x-large;
+  }
+  
+  .profile{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .profile img{
+    width: 50px;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .profile:hover{
+    cursor: pointer;
+  }
+section {
+    padding: 5rem 3rem 3rem;
+    color: rgb(236, 227, 227);
+    font-family: sans-serif;
+    word-spacing: 0.5rem;
+    font-weight: 600;
+}
+.home{
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-image: url(homecar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 3rem;
+    display: flex;
+}
+.home-text {
+    padding-left: 40px;
+}
+.home-text h1{
+    font-size: xx-large;
+}
+.btn {
+    word-spacing: 0;
+    text-decoration: none;
+    border: 1.5px solid rgb(14, 14, 14);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #09dbeeb2;
+    color: rgba(15, 14, 14, 0.769);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover { 
+    color: #eff3f5;
+    font-size:large;
+    box-shadow: 0 0 10px rgba(239, 245, 239, 0.642);
+}
+.about {
+    font-size: x-large;
+    font-family:sans-serif;
+    padding: 2rem;
+    text-align: justify;
+    border: 2px solid #eae3e3;
+    box-sizing: border-box;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    background-color: rgba(225, 219, 209, 0.495)
+}
+.listitem{
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    vertical-align: baseline;
+}
+.listitem-list{
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    padding-left: 4rem;
+
+}
+.top{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    transition: 0.3s ease-in-out;
+}
+.top:hover{
+    font-size: large;
+}
